@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/button_modifier"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_modifier"
+
+            />
+
+        <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:background="@drawable/rectangle"
+                >
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"/>
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+
+                android:text="Cheese Burger"
+                android:textSize="21dp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_item_price"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="0dp"
+                android:background="@color/fondprix"
+                android:maxLines="1"
+                android:textColor="@color/text_white"
+                android:textSize="14dp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="16dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitXY"
+                android:scaleX="0.8"
+                android:scaleY="0.8" />
+
+            <TextView
+                android:id="@+id/tv_subItem_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:lines="2"
+                android:paddingTop="3dp"
+                android:paddingBottom="8dp"
+                android:textColor="@color/text_black"
+                android:textSize="12dp"
+
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

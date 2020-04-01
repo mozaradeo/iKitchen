@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="164dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp">
+
+        <ImageView
+            android:id="@+id/spnr_img"
+            android:layout_width="138dp"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="42dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txt_spnr"
+            android:layout_width="128dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="105dp"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/spinner_text_size"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_detail_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailPage">
+
+
+    <ImageView
+        android:id="@+id/imgGif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scaleType="fitXY" />
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:scaleType="fitXY" />
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:onClick="onBackPress"
+            android:padding="13dp"
+            android:src="@drawable/btn_back" />
+
+        <ImageView
+            android:id="@+id/iv_fav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:onClick="addToFav"
+            android:padding="8dp"
+            android:src="@drawable/btn_fav_yes" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_header"
+        android:layout_marginTop="-8dp">
+
+
+
+        <TextView
+            android:id="@+id/tv_itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="top"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/Detail_title_text_size"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/rl_title_price" />
+
+    <TextView
+        android:id="@+id/tv_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="505dp"
+        android:layout_marginEnd="10dp"
+        android:includeFontPadding="false"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/Detail_title_text_size"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/tv_item_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_itemImage"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/text_white"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_AddToCart"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="182dp"
+        android:background="@drawable/bottomround"
+        android:gravity="center"
+        android:onClick="addToCart">
+
+        <Button
+            android:layout_width="157dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+
+            android:background="@drawable/validerbutton"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/my_cart_text_size"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+        <Button
+            android:layout_width="157dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+
+            android:background="@drawable/annulerbutton"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/my_cart_text_size"
+            android:textStyle="bold"
+            tools:ignore="SpUsage" />
+
+
+    </RelativeLayout>
+
+    <com.diegodobelo.expandingview.ExpandingList
+        android:id="@+id/expanding_list_main"
+        android:layout_width="842dp"
+        android:layout_height="500dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="250dp" />
+
+</RelativeLayout>

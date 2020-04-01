@@ -1,0 +1,278 @@
+<html>
+<head>
+<title>activity_home.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000000; font-style: italic;}
+.s1 { color: #0000ff; font-weight: bold;}
+.s2 { color: #000000;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #000080; font-weight: bold;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_home.xml</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s3">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s3">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+&lt;<span class="s4">android.support.v4.widget.DrawerLayout </span><span class="s1">xmlns:android</span><span class="s3">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span class="s1">xmlns:tools</span><span class="s3">=&quot;http://schemas.android.com/tools&quot;</span>
+    <span class="s1">android:id</span><span class="s3">=&quot;@+id/drawer_layout&quot;</span>
+    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+    <span class="s1">tools:context</span><span class="s3">=&quot;.activity.Home&quot;</span>&gt;
+
+    &lt;<span class="s4">RelativeLayout</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>&gt;
+
+        &lt;<span class="s4">ImageView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/imgGif&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:scaleType</span><span class="s3">=&quot;fitXY&quot; </span>/&gt;
+
+        &lt;<span class="s4">RelativeLayout</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/rl_header&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;150dp&quot;</span>&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/btn_sidemenu&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;55dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;55dp&quot;</span>
+                <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;7dp&quot;</span>
+                <span class="s1">android:onClick</span><span class="s3">=&quot;clickEventSlide&quot;</span>
+                <span class="s1">android:padding</span><span class="s3">=&quot;11dp&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/btn_sidemenu&quot; </span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;119dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;103dp&quot;</span>
+                <span class="s1">android:layout_centerInParent</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/img_burgerking&quot; </span>/&gt;
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/iv_addNumber&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;55dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;55dp&quot;</span>
+                <span class="s1">android:layout_alignParentEnd</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;5dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;8dp&quot;</span>
+                <span class="s1">android:padding</span><span class="s3">=&quot;13dp&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/btn_user&quot; </span>/&gt;
+
+
+        &lt;/<span class="s4">RelativeLayout</span>&gt;
+        &lt;<span class="s4">LinearLayout</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;90dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;150dp&quot;</span>
+            <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@color/fondbandeau&quot;</span>&gt;
+
+            &lt;<span class="s4">Button</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;116dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;27dp&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/bouton_retour&quot; </span>/&gt;
+        &lt;/<span class="s4">LinearLayout</span>&gt;
+
+        &lt;<span class="s4">RelativeLayout</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/rl_spinner&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;160dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;61dp&quot;</span>
+            <span class="s1">android:layout_below</span><span class="s3">=&quot;@+id/rl_header&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;16dp&quot;</span>&gt;
+
+
+        &lt;/<span class="s4">RelativeLayout</span>&gt;
+
+        &lt;<span class="s4">GridView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/list_home&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;662dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;900dp&quot;</span>
+            <span class="s1">android:layout_above</span><span class="s3">=&quot;@+id/rl_my_cart&quot;</span>
+            <span class="s1">android:layout_below</span><span class="s3">=&quot;@+id/rl_spinner&quot;</span>
+
+            <span class="s1">android:layout_alignParentEnd</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;0dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;9dp&quot;</span>
+            <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;-20dp&quot;</span>
+            <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;-48dp&quot;</span>
+            <span class="s1">android:layout_toEndOf</span><span class="s3">=&quot;@+id/spnr_cate&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+            <span class="s1">android:dividerHeight</span><span class="s3">=&quot;10dp&quot;</span>
+            <span class="s1">android:numColumns</span><span class="s3">=&quot;3&quot;</span>&gt;
+
+
+        &lt;/<span class="s4">GridView</span>&gt;
+
+        &lt;<span class="s4">ProgressBar</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/progressBar&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+            <span class="s1">android:layout_centerInParent</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:indeterminateTint</span><span class="s3">=&quot;@color/text_white&quot;</span>
+            <span class="s1">android:visibility</span><span class="s3">=&quot;gone&quot;</span>
+            <span class="s1">tools:targetApi</span><span class="s3">=&quot;lollipop&quot; </span>/&gt;
+
+        &lt;<span class="s4">TextView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/tv_noData2&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>
+            <span class="s1">android:text</span><span class="s3">=&quot;@string/no_items_found&quot;</span>
+            <span class="s1">android:textColor</span><span class="s3">=&quot;@color/colorGrey&quot;</span>
+            <span class="s1">android:textSize</span><span class="s3">=&quot;24dp&quot;</span>
+            <span class="s1">android:visibility</span><span class="s3">=&quot;gone&quot; </span>/&gt;
+
+        &lt;<span class="s4">RelativeLayout</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/rl_my_cart&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;100dp&quot;</span>
+            <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:background</span><span class="s3">=&quot;@color/white&quot;</span>
+
+            &gt;
+
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/tv_cart&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;164dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;35dp&quot;</span>
+                <span class="s1">android:layout_alignParentTop</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;30dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;8dp&quot;</span>
+                <span class="s1">android:src</span><span class="s3">=&quot;@drawable/ma_commande&quot; </span>/&gt;
+
+
+            &lt;<span class="s4">ImageView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/iv_background&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;0dp&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;#000&quot;</span>
+                <span class="s1">android:contentDescription</span><span class="s3">=&quot;@string/img_background&quot;</span>
+                <span class="s1">android:scaleType</span><span class="s3">=&quot;fitXY&quot; </span>/&gt;
+
+            &lt;<span class="s4">TextView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/itemName&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;33dp&quot;</span>
+                <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;32dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;16dp&quot;</span>
+                <span class="s1">android:maxLines</span><span class="s3">=&quot;2&quot;</span>
+                <span class="s1">android:text</span><span class="s3">=&quot;@string/txt_my_cart&quot;</span>
+                <span class="s1">android:textColor</span><span class="s3">=&quot;@color/text_white&quot;</span>
+                <span class="s1">android:textSize</span><span class="s3">=&quot;18dp&quot; </span>/&gt;
+
+
+            &lt;<span class="s4">RelativeLayout</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/rl_ListOrder&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;0dp&quot;</span>
+                <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;@dimen/main_screen_height&quot;</span>
+                <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/topround&quot;</span>&gt;
+
+
+                &lt;<span class="s4">TextView</span>
+                    <span class="s1">android:id</span><span class="s3">=&quot;@+id/tv_noData&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+                    <span class="s1">android:layout_above</span><span class="s3">=&quot;@+id/tv_totalAmount&quot;</span>
+                    <span class="s1">android:layout_centerHorizontal</span><span class="s3">=&quot;true&quot;</span>
+                    <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;10dp&quot;</span>
+                    <span class="s1">android:gravity</span><span class="s3">=&quot;center&quot;</span>
+                    <span class="s1">android:orientation</span><span class="s3">=&quot;vertical&quot;</span>
+                    <span class="s1">android:paddingTop</span><span class="s3">=&quot;8dp&quot;</span>
+                    <span class="s1">android:text</span><span class="s3">=&quot;@string/cart_is_empty&quot;</span>
+                    <span class="s1">android:textAlignment</span><span class="s3">=&quot;gravity&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s3">=&quot;@color/colorGrey&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s3">=&quot;24dp&quot;</span>
+                    <span class="s1">android:visibility</span><span class="s3">=&quot;gone&quot; </span>/&gt;
+
+                &lt;<span class="s4">TextView</span>
+                    <span class="s1">android:id</span><span class="s3">=&quot;@+id/tv_totalAmount&quot;</span>
+                    <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                    <span class="s1">android:layout_alignParentEnd</span><span class="s3">=&quot;true&quot;</span>
+                    <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+                    <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;15dp&quot;</span>
+                    <span class="s1">android:text</span><span class="s3">=&quot;Total Amount : $20.85&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s3">=&quot;@color/text_black&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s3">=&quot;15dp&quot;</span>
+                    <span class="s1">tools:ignore</span><span class="s3">=&quot;HardcodedText&quot; </span>/&gt;
+
+            &lt;/<span class="s4">RelativeLayout</span>&gt;
+
+            &lt;<span class="s4">RelativeLayout</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/rl_CompleteOrder&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;75dp&quot;</span>
+                <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;10dp&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/bottomround&quot;</span>&gt;
+
+                &lt;<span class="s4">Button</span>
+                    <span class="s1">android:layout_width</span><span class="s3">=&quot;216dp&quot;</span>
+                    <span class="s1">android:layout_height</span><span class="s3">=&quot;32dp&quot;</span>
+                    <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;150dp&quot;</span>
+                    <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;15dp&quot;</span>
+                    <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;-48dp&quot;</span>
+                    <span class="s1">android:background</span><span class="s3">=&quot;@drawable/add_to_cart_button&quot;</span>
+                    <span class="s1">android:clickable</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s1">android:focusable</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s1">android:text</span><span class="s3">=&quot;@string/txt_complete_order&quot;</span>
+                    <span class="s1">android:textAllCaps</span><span class="s3">=&quot;false&quot;</span>
+                    <span class="s1">android:textColor</span><span class="s3">=&quot;@color/text_white&quot;</span>
+                    <span class="s1">android:textSize</span><span class="s3">=&quot;@dimen/my_cart_text_size&quot;</span>
+                    <span class="s1">android:textStyle</span><span class="s3">=&quot;bold&quot; </span>/&gt;
+            &lt;/<span class="s4">RelativeLayout</span>&gt;
+
+            &lt;<span class="s4">TextView</span>
+                <span class="s1">android:id</span><span class="s3">=&quot;@+id/tv_numberOfItemCart&quot;</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;wrap_content&quot;</span>
+                <span class="s1">android:layout_alignParentEnd</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:layout_centerVertical</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:layout_marginEnd</span><span class="s3">=&quot;15dp&quot;</span>
+                <span class="s1">android:textColor</span><span class="s3">=&quot;@color/text_black&quot;</span>
+                <span class="s1">android:textSize</span><span class="s3">=&quot;13dp&quot;</span>
+                <span class="s1">tools:ignore</span><span class="s3">=&quot;HardcodedText,SpUsage&quot; </span>/&gt;
+
+            &lt;<span class="s4">Button</span>
+                <span class="s1">android:layout_width</span><span class="s3">=&quot;163dp&quot;</span>
+                <span class="s1">android:layout_height</span><span class="s3">=&quot;33dp&quot;</span>
+                <span class="s1">android:layout_alignParentStart</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:layout_alignParentBottom</span><span class="s3">=&quot;true&quot;</span>
+                <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;637dp&quot;</span>
+                <span class="s1">android:layout_marginBottom</span><span class="s3">=&quot;12dp&quot;</span>
+                <span class="s1">android:background</span><span class="s3">=&quot;@drawable/button_paiement&quot; </span>/&gt;
+
+        &lt;/<span class="s4">RelativeLayout</span>&gt;
+
+        &lt;<span class="s4">ListView</span>
+            <span class="s1">android:id</span><span class="s3">=&quot;@+id/spnr_cate&quot;</span>
+            <span class="s1">android:layout_width</span><span class="s3">=&quot;155dp&quot;</span>
+            <span class="s1">android:layout_height</span><span class="s3">=&quot;926dp&quot;</span>
+            <span class="s1">android:layout_alignParentStart</span><span class="s3">=&quot;true&quot;</span>
+            <span class="s1">android:layout_marginStart</span><span class="s3">=&quot;3dp&quot;</span>
+            <span class="s1">android:layout_marginTop</span><span class="s3">=&quot;240dp&quot; </span>/&gt;
+
+
+    &lt;/<span class="s4">RelativeLayout</span>&gt;
+
+    &lt;<span class="s4">include</span>
+        <span class="s1">layout</span><span class="s3">=&quot;@layout/layout_navigation&quot;</span>
+        <span class="s1">android:layout_width</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_height</span><span class="s3">=&quot;match_parent&quot;</span>
+        <span class="s1">android:layout_gravity</span><span class="s3">=&quot;start&quot; </span>/&gt;
+
+&lt;/<span class="s4">android.support.v4.widget.DrawerLayout</span>&gt;</pre>
+</body>
+</html>
